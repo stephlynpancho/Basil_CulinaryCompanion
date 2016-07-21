@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basil</title>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  </head>
+  <body>
+      <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                x[slideIndex-1].style.display = "block"; 
+            }
+      </script>
+      <div id = "header">
+          <h1 <b>Basil</b> &nbsp;</h1>
+          <h4> Your Culinary Companion </h4
+              >
+      </div>
+     <div id = "content">   
+         
+        <h1 class="amatic">Happiness is Homemade</h1>
+            <br>
+        <input class="btn waves-effect waves-light #00bfa5 white-text" onclick ="location.href = '/recipe'" type= "submit" value="Recipe Demo">
+      </div>
+  </body>
+</html>

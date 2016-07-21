@@ -1,0 +1,35 @@
+{
+  "intents": [
+    {
+      "intent": "NextLineIntent"
+    },
+    {
+      "intent": "PreviousLineIntent"
+    },
+    {
+      "intent": "AnyLineIntent",
+      "slots": [
+        {
+          "name": "lineOrd",
+          "type": "ordinal"
+          
+        },
+        {
+          "name": "lineNum",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "LastLineIntent"
+    },
+    {
+      "intent": "StartIntent"
+    },
+ 
+    {
+      "intent": "RepeatIntent"
+      
+    }
+  ]
+}

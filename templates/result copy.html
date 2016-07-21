@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basil</title>
+    
+      
+      
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      
+      
+    <link rel="stylesheet" type="text/css" href="/static/css/result.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    
+      
+  </head>
+  <body>
+      <script src="/static/js/logic.js"></script>
+      <script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+      </script>
+      <div id = "header">
+        <h2> Basil </h2>
+        <h4> Your Culinary Companion </h4>
+      </div>
+     <div id = "content">  
+        
+         
+<!--         <a class="btn" onclick="plusDivs(-1)">&#10094;</a>-->
+
+
+        </div>
+         </div>
+         
+         <center>
+<!--
+<img class="mySlides" src="http://pokeapi.co/media/img/1.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/2.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/3.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/4.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/5.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/6.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/7.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/8.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/9.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/10.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/11.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/12.png">
+<img class="mySlides" src="http://pokeapi.co/media/img/13.png">
+-->
+             
+
+<!--<img class="mySlides" src="/static/img/steak.jpg" style="width:50%">  -->
+             
+<div class="mySlides">
+  <img src="/static/img/steak1.jpg" style="width:70%">
+  <div class="w3-display-bottomleft w3-container w3-padding-5 white">
+    <h1><b>Steak Surprise</b></h1>
+  </div>
+</div>
+             
+<div class="mySlides">
+  <h1><b>Step 1</b></h1>
+  <h1>Mince garlic and make marinade by mixing 4 tablespoons oil, 2 tablespoons vinegar, and half of the garlic in a small bowl.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 2</b></h1>
+  <h1>Pour marinade in glass baking dish, add steaks, and turn to coat both sides. Marinate at room temperature for 30 minutes. I can set a reminder if you say Alexa, start timer.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 3</b></h1>
+  <h1>Slice vegetables, heat 2 tablespoons of oil in skillet at medium heat, and add vegetables and remaining garlic to skillet. Saute for 8 minutes.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 4</b></h1>
+  <h1>Add 1 cup of broth plus salt and pepper to taste. Increase heat to boiling. Boil for 5 minutes.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 5</b></h1>
+  <h1>Turn off the burner and cover skillet for now. Let's clean while we wait for the marinade timer.</h1>
+</div>
+    
+<div class="mySlides">
+
+  <h1><b>Step 6</b></h1>
+  <h1>Preheat your broiler while you remove the meat from the marinade and sprinkle it with salt and pepper.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 7</b></h1>
+  <h1>Broil steak and flip halfway through. 5 minutes per side for rare, 8 minutes for well-done.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 8</b></h1>
+  <h1>Put steaks on a cutting board and let rest for 5 minutes while bringing vegetables to a simmer.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 9</b></h1>
+  <h1>Slice steaks against the grain. Artfully arrange steak slices and vegetables on platter. Pour some of the skillet juices on top and then sprinkle with cheese and parsley. Enjoy your meal. I wish I could taste it.</h1>
+</div>
+    
+<div class="mySlides">
+  <h1><b>Step 10</b></h1>
+  <h1>Enjoy!</h1>
+</div>
+
+             </center>
+  </body>
+         
+<!--        <a class="btn" onclick="plusDivs(+1)">&#10095;</a>-->
+            
+        <div id ="footer">
+            <center>
+    <button class="btn" onclick="plusDivs(-1)">&#10094; Prev</button>
+    <button class="btn" onclick="plusDivs(1)">Next &#10095;</button>
+        <br>
+    <button class="btn" onclick="currentDiv(1)">1</button> 
+    <button class="btn" onclick="currentDiv(2)">2</button> 
+    <button class="btn" onclick="currentDiv(3)">3</button>
+    <button class="btn" onclick="currentDiv(4)">4</button> 
+    <button class="btn" onclick="currentDiv(5)">5</button> 
+    <button class="btn" onclick="currentDiv(6)">6</button>
+    <button class="btn" onclick="currentDiv(7)">7</button> 
+    <button class="btn" onclick="currentDiv(8)">8</button> 
+    <button class="btn" onclick="currentDiv(9)">9</button>
+    <button class="btn" onclick="currentDiv(10)">10</button> 
+    <button class="btn" onclick="currentDiv(11)">11</button> 
+            </center>
+        </div>
+</div>
+         
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+         
+<!--      </div>-->
+
+</html>

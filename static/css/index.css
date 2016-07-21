@@ -1,0 +1,112 @@
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #ffffff;
+	background-size: 100%;
+	background-repeat: no-repeat;
+    background-image: url( "/static/img/welcomebg.jpg");
+}
+#header{
+	vertical-align: top;
+    background-image: url( "/static/img/logo55x55.jpg");
+    background-repeat: repeat-y;
+	display: block;
+	background-color: #00bfa5;
+	height: 56px;
+}
+	#header h1{
+		display: inline-block;
+		color: white;
+		font-size: 36px;
+		margin-top: 14px;
+		margin-left: 55px;
+		font-weight: bold;
+	}
+	#header h4{
+		font-size: 1.12em;
+		display: inline-block;
+		color: white;
+		font-weight: bold;
+	}
+	#header a{
+		text-decoration: none;
+		font-size: 1.12em;
+		display: inline-block;
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-right: 40px;
+		margin-top: 18px;
+	}
+#content{
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+    margin: auto;
+}
+.box{
+	opacity: 0.94;
+	max-width: 100%;
+}
+.col.s12.m12.l6{
+    float: none;
+    margin: 40px auto;
+}
+
+
+.amatic {
+    font-size: 108px;
+    font-family: "Amatic SC", cursive !important;
+}
+
+
+.btn {
+	position: relative;
+    padding: 50px;
+	display: block;
+	float: center;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	border-width: 0;
+	outline: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	background-color: #e53935;
+	color: #ecf0f1;
+	transition: background-color .3s;
+}
+
+}
+
+.btn > * {
+  position: relative;
+}
+
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;  
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
